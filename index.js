@@ -1,32 +1,35 @@
 const app = "I don't do much.";
+function resetKitten(){
+  
+}
 
 function destructivelyAppendKitten(name){
-  arrayName.push(elementToAdd);
+  kittens.push(name);
   return arrayName;
 }
-function destructivelyPrependKitten(arrayName, elementToAdd){
-  arrayName.unshift(elementToAdd);
-  return arrayName;
+function destructivelyPrependKitten(name){
+  kittens.unshift(elementToAdd);
+  return kittens;
 }
-function destructivelyRemoveLastKitten(arrayName){
-  arrayName.pop();
-  return arrayName;
+function destructivelyRemoveLastKitten(name){
+  kittens.pop();
+  return kittens;
 }
-function destructivelyRemoveFirstKitten(arrayName){
-  arrayName.shift();
-  return arrayName;
+function destructivelyRemoveFirstKitten(name){
+  kittens.shift();
+  return kittens;
 }
-function appendKitten(arrayName, elementToAdd){
-  return [...arrayName, elementToAdd];
+function appendKitten(name){
+  return [...kittens, elementToAdd];
 }
-function prependKitten(arrayName, elementToAdd){
-  return [elementToAdd, ...arrayName];
+function prependKitten(name){
+  return [elementToAdd, ...kittens];
 }
-function removeLastKitten(arrayName){
-  let newArray = arrayName.slice(0, arrayName.length);
+function removeLastKitten(name){
+  let newArray = kittens.slice(0, kittens.length);
   return newArray;
 }
-function removeFirstKitten(arrayName){
-  let newArray = arrayName.slice(1);
+function removeFirstKitten(name){
+  let newArray = kittens.slice(1);
   return newArray;
 }
