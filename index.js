@@ -2,7 +2,7 @@ const app = "I don't do much.";
 
 function destructivelyAppendKitten(name){
   kittens.push(name);
-  return arrayName;
+  return kittens;
 }
 function destructivelyPrependKitten(name){
   kittens.unshift(elementToAdd);
@@ -17,10 +17,10 @@ function destructivelyRemoveFirstKitten(name){
   return kittens;
 }
 function appendKitten(name){
-  return [...kittens, elementToAdd];
+  return [...kittens, name];
 }
 function prependKitten(name){
-  return [elementToAdd, ...kittens];
+  return [name, ...kittens];
 }
 function removeLastKitten(name){
   let newArray = kittens.slice(0, kittens.length);
